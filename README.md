@@ -10,4 +10,4 @@ Autograder used for Lab3. Prepared by Girish Srivatsa and Prajeeth.S
 
 On running, a file named `grades.csv` is created, which shows various parameters as given in `grade_structure.py`
 
-For Q2 bonus, there is a folder named bonus inside `testcases/Q2`. Place your inverse.s file inside the `testcases/Q2/bonus/submission` folder and run `./generate_answers.sh` to check for correctness.
+For Q2 bonus, there is a folder named bonus inside `testcases/Q2`. Place your inverse.s file inside the `testcases/Q2/bonus/submission` folder and run `./generate_answers.sh` to check for correctness. For generating results only for a particular question you can ignore testing other parts by the flags `-q2,-q3,-q4` where `-q2` results in no testing for Q2 being performed.
