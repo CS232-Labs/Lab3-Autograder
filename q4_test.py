@@ -187,7 +187,7 @@ def check_diff(file1, file2, isTestbench = False):
         while cur1 < len(lines1):
 
             if cur2 >= len(lines2):
-                grade.q4_message += "Tampered file\n"
+                # grade.q4_message += "Tampered file\n"
                 return True
 
             # print(f"cur1 = {cur1}, cur2 = {cur2}")
@@ -220,7 +220,7 @@ def check_diff(file1, file2, isTestbench = False):
             else:
                 cur2 += 1
                 if isTestbench and (line2.startswith("call")):
-                    grade.q4_message += "Used call instruction in testbench\n"
+                    # grade.q4_message += "Used call instruction in testbench\n"
                     return True
 
             # print(cur1, cur2, len(lines1))
@@ -254,7 +254,7 @@ def check_code(expected_submission_path, actual_folder_path):
             # print("Not same files...")
             error(f"[ERROR] {filename} has been tampered...")
             grade.q4_code_valid = 0
-            grade.q4_message += f"{filename} has been tampered...\n"
+            # grade.q4_message += f"{filename} has been tampered...\n"
         else:
             grade.q4_code_valid = 1
         
